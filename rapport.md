@@ -1,8 +1,8 @@
 # Rapport d'Analyse des Journaux du Pare-Feu
 
-**Auteur :** [Votre Nom et Prénom]  
+**Auteur :** Bienvenu Ainy DIOUF  
 **Rôle :** Technicien(ne) Sécurité  
-**Date :** [Date du jour]  
+**Date :** 30/10/2026
 **Projet :** Analyse des logs réseau (Niveau L3)
 
 ---
