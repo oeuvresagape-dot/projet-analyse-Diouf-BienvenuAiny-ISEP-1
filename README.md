@@ -1,10 +1,10 @@
 # Projet 1 - Analyse des journaux d'un pare-feu (Réseaux / Sécurité / IoT)
 
 ## 👤 Informations
-* **Nom :** [VOTRE_NOM]
-* **Prénom :** [VOTRE_PRENOM]
-* **Niveau :** L3
-* **Filière / Groupe :** [VOTRE_FILIERE_OU_GROUPE]
+* **Nom :**  DIOUF
+* **Prénom :** Bienvenu Ainy
+* **Niveau :** L2
+* **Filière / Groupe :** RSIOTP6
 
 ---
 
