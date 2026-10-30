@@ -1,23 +1,34 @@
-# Projet de Détection d'Attaques Réseau par Machine Learning
+# Projet 1 - Analyse des journaux d'un pare-feu (Réseaux / Sécurité / IoT)
 
-**Auteur :** Bienvenu Ainy Diouf  
-**Niveau :** L3 - Data Science & Sécurité Réseau  
+## 👤 Informations
+* **Nom :** [VOTRE_NOM]
+* **Prénom :** [VOTRE_PRENOM]
+* **Niveau :** L3
+* **Filière / Groupe :** [VOTRE_FILIERE_OU_GROUPE]
 
-## 1. Description du Projet
-Ce projet a pour objectif de concevoir un modèle de Machine Learning capable de classifier automatiquement les flux réseau afin de détecter des comportements malveillants ou des attaques (classes : `0` pour trafic normal, `1` pour attaque). L'analyse s'appuie sur un jeu de données d'entraînement de 3 000 flux (`data/flux_train.csv`) intégrant diverses métriques (durée, protocole, ports, volumes de données, taux de paquets SYN, échecs de connexion, etc.).
+---
 
-## 2. Structure du Dépôt
-Le projet respecte l'arborescence standardisée suivante :
+## 📌 Présentation du Projet
+Ce projet consiste à analyser un jeu de données de journaux (logs) de connexions réseau sur une période d'une semaine (`data/logs_reseau.csv`). 
+
+L'objectif est d'effectuer un nettoyage des données, d'extraire des métriques clés de sécurité, de générer des visualisations graphiques et d'identifier des comportements malveillants ou suspects sur le réseau (ex. scan de ports, exfiltration de données) afin de formuler des recommandations de sécurité adaptées.
+
+---
+
+## 📁 Structure du Dépôt
+Le dépôt respecte la structure minimale requise pour l'évaluation :
+
 ```text
-projet-ml-Diouf-BienvenuAiny/
-├── README.md           # Documentation du projet
-├── requirements.txt    # Dépendances du projet
+projet-analyse-NOM-Prenom/
+├── README.md               # Présentation du projet et instructions
+├── requirements.txt        # Dépendances Python requises
+├── analyse.py              # Script principal d'analyse et de nettoyage
+├── rapport.md              # Rapport d'analyse et recommandations
+├── resultats.json          # Métriques clés calculées (généré automatiquement)
 ├── data/
-│   └── flux_train.csv  # Données brutes d'entraînement
-├── src/
-│   ├── train.py        # Script d'entraînement, évaluation et sérialisation
-│   └── predict.py      # Script contenant la fonction de prédiction requise
-└── models/
-    └── model.joblib    # Modèle entraîné et sérialisé
-
- Résultats et Évaluation des ModèlesModèleF1-Score (Classe Attaque)Rappel (Recall)Précision (Precision)Régression Logistique0.85810.76050.9845Forêt Aléatoire (Random Forest)0.98190.97600.9879
+│   └── logs_reseau.csv     # Fichier de données brut
+└── figures/                # Graphiques générés par le script
+    ├── top_ports.png
+    ├── activite_temporelle.png
+    ├── bytes_par_appareil.png
+    └── repartition_actions.png
